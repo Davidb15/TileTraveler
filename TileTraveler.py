@@ -16,7 +16,12 @@ while i < 4:
             if direction in 'nN':
                 j = 2
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'nN':
+                    j = 2
+                else:
+                    print("Not a valid direction!")
 
         elif location == '12':
             print(travel + north + ' or ' + east + ' or ' + south + '.')
@@ -28,7 +33,16 @@ while i < 4:
             elif direction in 'eE':
                 i = 2
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'nN':
+                    j = 3 
+                elif direction in 'sS':
+                    j = 1
+                elif direction in 'eE':
+                    i = 2
+                else:
+                    print("Not a valid direction!")
 
         elif location == '13':
             print(travel + east + ' or ' + south + '.')
@@ -38,7 +52,14 @@ while i < 4:
             elif direction in 'sS':
                 j = 2
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'eE':
+                    i = 2
+                elif direction in 'sS':
+                    j = 2
+                else:
+                    print("Not a valid direction!")
 
         elif location == '21':
             print(travel + north + '.')
@@ -46,7 +67,12 @@ while i < 4:
             if direction in 'nN':
                 j = 2
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'nN':
+                    j = 2
+                else:
+                    print("Not a valid direction!")
 
         elif location == '22':
             print(travel + south + ' or ' + west + '.')
@@ -56,7 +82,14 @@ while i < 4:
             elif direction in 'wW':
                 i = 1
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'sS':
+                    j = 1
+                elif direction in 'wW':
+                    i = 1
+                else:
+                    print("Not a valid direction!")
 
         elif location == '23':
             print(travel + east + ' or ' + west + '.')
@@ -66,7 +99,14 @@ while i < 4:
             elif direction in 'wW':
                 i = 1
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'eE':
+                    i = 3
+                elif direction in 'wW':
+                    i = 1
+                else:
+                    print("Not a valid direction!")
 
         elif location == '33':
             print(travel + south + ' or ' + west + '.')
@@ -76,7 +116,14 @@ while i < 4:
             elif direction in 'wW':
                 i = 2
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'sS':
+                    j = 2
+                elif direction in 'wW':
+                    i = 2
+                else:
+                    print("Not a valid direction!")
 
         elif location == '32':
             print(travel + north + ' or ' + south + '.')
@@ -86,7 +133,14 @@ while i < 4:
             elif direction in 'nN':
                 j = 3
             else:
-                print("Not a valid direction")
+                print("Not a valid direction!")
+                direction = str(input("Direction: "))
+                if direction in 'sS':
+                    j = 1
+                elif direction in 'nN':
+                    j = 3
+                else:
+                    print("Not a valid direction!")
                 
         else:
             print('Victory!')
