@@ -1,3 +1,9 @@
+#Kóðinn virkar þannig að ég checka hver locationið er með því að nota if setningu og það eru if setningar mögulegar fyrir öll
+#möguleg location sem er í leiknum. Fyrir hvert er þá ákveðnir valmöguleikar í boði (North og South t.d.)
+#Næst er sett inn direction og ef direction er valid þá breytist staðsetning i og j sem ég nota í while loopu
+#Ef það er invalid þá runnar loopan aftur til þess að leita af direction
+#Þegar location verður 31 þá prentast victory og ég breyti staðsetningu i og j í 5 þannig að while loopan runnar ekki aftur
+
 north = '(N)orth'
 east = '(E)ast'
 west = '(W)est'
